@@ -1,0 +1,442 @@
+#
+#Tag 0x00FF0408
+
+Resolve3D softWoRx-Acquire Version: 4.1.2 Release 1
+
+Running on host: cn61496
+
+Resolve3D Image File: /data1/Ved/2013.05.29_SHIP2_vs_D608A_effect_on_TAPP1/GFP_01_R3D.dv
+
+Created  Wed May 29 17:58:08 2013
+
+
+Optics:
+  Objective:	Olympus 60X/1.42, Plan Apo N, UIS2, 1-U2B933
+  Lens ID:  	10612
+  Aux Magn: 	1.00
+
+Image Properties:
+  XY Dimensions:            	512 x 512
+  ZWT Dimensions (expected):	10 x 3 x 1
+  Pixel Size:               	0.21400 0.21400 0.300
+  Binning:                  	2x2
+  Flat-field Calibration:   	Off
+
+Camera:
+  Type:        	COOLSNAP_HQ2 / HQ2-ICX285     
+  Gain:        	4.00X
+  Speed:       	10000KHz
+  Temp Setting:	-25.0C
+
+
+Resolve3D Macro:
+--------------------------------------------------------
+# Created by DeltaVision Experiment Designer (version: 4.1.2 Release 1)
+# Experiment Macro Name: Resolve3D
+
+# Open image file
+OPF
+
+
+# Starting Scan From Current Focus (Middle of sample)
+
+# Move to start of sectioning from initial point. Remove backlash.
+FOCUS 9.350
+FOCUS -7.800
+FOCUS -0.100
+FOCUS -0.100
+
+# Z sectioning loop.
+FIRST_Z
+DO 10
+  FILTERS FITC,FITC,25%
+  ACTSHUT 17
+  CCD 0.300
+  WRT
+  FILTERS TRITC,TRITC,100%
+  ACTSHUT 17
+  CCD 0.300
+  WRT
+  FILTERS CY-5,CY-5,10%
+  ACTSHUT 17
+  CCD 0.050
+  WRT
+  SECTIONZ -0.300
+  NEXT_Z
+ENDDO
+
+# Close image file(s) 
+CLF
+
+
+# Move to initial point from end of scan.
+FOCUS 1.650
+BEEP
+
+#
+#
+#KEY Experiment Designer Keys: Don't Modify
+#
+#KEY EXPERIMENT_TYPE STANDARD
+#KEY DO_FAST_ACQUISITION F
+#KEY LAMPS_OFF_AT_END F
+#KEY DO_Z_SECTIONING T
+#KEY Z_APPLY_BACKLASH T
+#KEY Z_BACKLASH 8.0000
+#KEY Z_START_POSITION MIDDLE
+#KEY SECT_SPACING 0.3000
+#KEY NUM_Z_SECTIONS 10
+#KEY SAMPLE_THICKNESS 3.0000
+#KEY CHANNEL 0.3000,FITC,FITC,25%
+#KEY EX_SHUTTERS 2,EX=T,TRANS=F
+#KEY EM_SHUTTERS 1,CCD1=T
+#KEY CHANNEL 0.3000,TRITC,TRITC,100%
+#KEY EX_SHUTTERS 2,EX=T,TRANS=F
+#KEY EM_SHUTTERS 1,CCD1=T
+#KEY CHANNEL 0.0500,CY-5,CY-5,10%
+#KEY EX_SHUTTERS 2,EX=T,TRANS=F
+#KEY EM_SHUTTERS 1,CCD1=T
+#KEY DO_REFERENCE_IMAGE F
+#KEY DO_CELL_TRACK F
+#KEY DO_AUTOFOCUS F
+#KEY DO_OAI_SCANNING F
+#KEY DO_TIME_LAPSE F
+#KEY DO_POINT_VISITING F
+#KEY DO_PANEL_COLLECTION F
+#
+#
+--------------------------------------------------------
+
+Experiment Record:
+------------------
+Image 1.
+           Time:       Wed May 29 17:58:09 2013
+           Time Point: 0.000 secs
+           Intensity:  Min = 69, Max = 2154, Mean = 213.02467
+           Photosensor reading: 68684544.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-38.040)
+
+Image 2.
+           Time:       Wed May 29 17:58:10 2013
+           Time Point: 0.916 secs
+           Intensity:  Min = 85, Max = 631, Mean = 157.73097
+           Photosensor reading: 510684064.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-38.040)
+
+Image 3.
+           Time:       Wed May 29 17:58:10 2013
+           Time Point: 1.744 secs
+           Intensity:  Min = 55, Max = 640, Mean = 127.19234
+           Photosensor reading: 16778390.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-38.040)
+
+Image 4.
+           Time:       Wed May 29 17:58:11 2013
+           Time Point: 2.267 secs
+           Intensity:  Min = 64, Max = 2164, Mean = 210.59735
+           Photosensor reading: 68777952.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-38.331)
+
+Image 5.
+           Time:       Wed May 29 17:58:12 2013
+           Time Point: 3.152 secs
+           Intensity:  Min = 85, Max = 799, Mean = 156.23534
+           Photosensor reading: 511322112.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-38.331)
+
+Image 6.
+           Time:       Wed May 29 17:58:12 2013
+           Time Point: 3.981 secs
+           Intensity:  Min = 56, Max = 788, Mean = 127.21241
+           Photosensor reading: 16795604.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-38.331)
+
+Image 7.
+           Time:       Wed May 29 17:58:13 2013
+           Time Point: 4.507 secs
+           Intensity:  Min = 66, Max = 2204, Mean = 209.57077
+           Photosensor reading: 68717280.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-38.627)
+
+Image 8.
+           Time:       Wed May 29 17:58:14 2013
+           Time Point: 5.389 secs
+           Intensity:  Min = 81, Max = 1075, Mean = 154.80826
+           Photosensor reading: 511091808.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-38.627)
+
+Image 9.
+           Time:       Wed May 29 17:58:15 2013
+           Time Point: 6.219 secs
+           Intensity:  Min = 56, Max = 845, Mean = 126.89806
+           Photosensor reading: 16723029.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-38.627)
+
+Image 10.
+           Time:       Wed May 29 17:58:15 2013
+           Time Point: 6.743 secs
+           Intensity:  Min = 66, Max = 2284, Mean = 209.36234
+           Photosensor reading: 68779288.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-38.933)
+
+Image 11.
+           Time:       Wed May 29 17:58:16 2013
+           Time Point: 7.650 secs
+           Intensity:  Min = 82, Max = 1638, Mean = 153.50583
+           Photosensor reading: 510798496.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-38.933)
+
+Image 12.
+           Time:       Wed May 29 17:58:17 2013
+           Time Point: 8.480 secs
+           Intensity:  Min = 55, Max = 872, Mean = 127.06039
+           Photosensor reading: 16787830.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-38.933)
+
+Image 13.
+           Time:       Wed May 29 17:58:18 2013
+           Time Point: 9.004 secs
+           Intensity:  Min = 69, Max = 2325, Mean = 209.30081
+           Photosensor reading: 68762864.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-39.229)
+
+Image 14.
+           Time:       Wed May 29 17:58:19 2013
+           Time Point: 9.886 secs
+           Intensity:  Min = 83, Max = 1439, Mean = 152.37030
+           Photosensor reading: 510128320.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-39.229)
+
+Image 15.
+           Time:       Wed May 29 17:58:19 2013
+           Time Point: 10.717 secs
+           Intensity:  Min = 53, Max = 892, Mean = 127.12991
+           Photosensor reading: 16707555.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-39.229)
+
+Image 16.
+           Time:       Wed May 29 17:58:20 2013
+           Time Point: 11.241 secs
+           Intensity:  Min = 67, Max = 2319, Mean = 209.29433
+           Photosensor reading: 68738608.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-39.531)
+
+Image 17.
+           Time:       Wed May 29 17:58:21 2013
+           Time Point: 12.125 secs
+           Intensity:  Min = 80, Max = 1059, Mean = 151.35052
+           Photosensor reading: 510079584.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-39.531)
+
+Image 18.
+           Time:       Wed May 29 17:58:21 2013
+           Time Point: 12.955 secs
+           Intensity:  Min = 55, Max = 1008, Mean = 127.15401
+           Photosensor reading: 16743553.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-39.531)
+
+Image 19.
+           Time:       Wed May 29 17:58:22 2013
+           Time Point: 13.523 secs
+           Intensity:  Min = 69, Max = 2398, Mean = 209.51555
+           Photosensor reading: 68805200.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-39.827)
+
+Image 20.
+           Time:       Wed May 29 17:58:23 2013
+           Time Point: 14.407 secs
+           Intensity:  Min = 78, Max = 927, Mean = 150.44408
+           Photosensor reading: 511455392.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-39.827)
+
+Image 21.
+           Time:       Wed May 29 17:58:24 2013
+           Time Point: 15.235 secs
+           Intensity:  Min = 50, Max = 886, Mean = 127.23985
+           Photosensor reading: 16793946.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-39.827)
+
+Image 22.
+           Time:       Wed May 29 17:58:24 2013
+           Time Point: 15.759 secs
+           Intensity:  Min = 67, Max = 2474, Mean = 209.52515
+           Photosensor reading: 68727528.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-40.134)
+
+Image 23.
+           Time:       Wed May 29 17:58:25 2013
+           Time Point: 16.647 secs
+           Intensity:  Min = 76, Max = 620, Mean = 149.93973
+           Photosensor reading: 511757344.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-40.134)
+
+Image 24.
+           Time:       Wed May 29 17:58:26 2013
+           Time Point: 17.477 secs
+           Intensity:  Min = 56, Max = 780, Mean = 127.34731
+           Photosensor reading: 16808464.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-40.134)
+
+Image 25.
+           Time:       Wed May 29 17:58:27 2013
+           Time Point: 17.999 secs
+           Intensity:  Min = 69, Max = 2591, Mean = 209.52190
+           Photosensor reading: 68796336.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-40.430)
+
+Image 26.
+           Time:       Wed May 29 17:58:28 2013
+           Time Point: 18.882 secs
+           Intensity:  Min = 79, Max = 516, Mean = 149.05754
+           Photosensor reading: 511612864.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-40.430)
+
+Image 27.
+           Time:       Wed May 29 17:58:28 2013
+           Time Point: 19.711 secs
+           Intensity:  Min = 55, Max = 840, Mean = 127.33404
+           Photosensor reading: 16751617.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-40.430)
+
+Image 28.
+           Time:       Wed May 29 17:58:29 2013
+           Time Point: 20.265 secs
+           Intensity:  Min = 67, Max = 2624, Mean = 209.51546
+           Photosensor reading: 68742184.0
+           Exposure time: 0.300 secs
+           EX filter:  FITC
+           EM filter:  FITC
+           ND filter:  25%
+           Stage coordinates:   (+1225.490,+1023.309,-40.731)
+
+Image 29.
+           Time:       Wed May 29 17:58:30 2013
+           Time Point: 21.150 secs
+           Intensity:  Min = 81, Max = 595, Mean = 148.20090
+           Photosensor reading: 511964544.0
+           Exposure time: 0.300 secs
+           EX filter:  TRITC
+           EM filter:  TRITC
+           ND filter:  100%
+           Stage coordinates:   (+1225.490,+1023.309,-40.731)
+
+Image 30.
+           Time:       Wed May 29 17:58:30 2013
+           Time Point: 21.980 secs
+           Intensity:  Min = 59, Max = 850, Mean = 127.58083
+           Photosensor reading: 16805748.0
+           Exposure time: 0.050 secs
+           EX filter:  CY-5
+           EM filter:  CY-5
+           ND filter:  10%
+           Stage coordinates:   (+1225.490,+1023.309,-40.731)
+
+Total number of images saved: 30
