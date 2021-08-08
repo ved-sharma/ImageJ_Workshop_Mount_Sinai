@@ -1,7 +1,7 @@
 # ImageJ/Fiji Workshop at Mount Sinai
 I gave this two-hour workshop at the [Microscopy Core and Advanced Bioimaging Center](https://icahn.mssm.edu/research/portal/resources/deans-cores/microscopy) of Icahn School of Medicine in December 2015. 
 
-Creating this repo to put my presentation slides. All the macros I demoed are also provided. Images for running macros 1 and 2 could be found in the "Data" directory.  
+Creating this repo to put my presentation [slides](https://github.com/ved-sharma/ImageJ_workshop_Mount_Sinai/blob/584d81654380a05558410752a671afce9995563f/ImageJ%20workshop%20-%20Ved%20Sharma.pdf). All the macros I demoed are also provided. Images for running macros 1 and 2 could be found in the "Data" directory.  
 
 Here is the flyer from the workshop:
 
